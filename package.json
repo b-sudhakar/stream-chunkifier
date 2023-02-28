@@ -1,0 +1,37 @@
+{
+  "name": "stream-chunkifier",
+  "version": "1.0.0",
+  "description": "A transform stream which chunks incoming stream into evenly sized chunks, ",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=15"
+  },
+  "scripts": {
+    "test": "nyc mocha tests/",
+    "pretest": "eslint src/**/*.js",
+    "lint": "eslint src/**/*.js tests/**/*.js",
+    "lint-fix": "eslint --fix src/**/*.js tests/**/*.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "stream",
+    "chunks",
+    "transform",
+    "chunkify",
+    "buffer"
+  ],
+  "author": "Sudhakar",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.35.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
+  }
+}
