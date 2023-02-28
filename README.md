@@ -9,7 +9,7 @@ Add support to chunk sterams by delimter
 ## Install
 
 ```
-$ npm install
+$ npm install stream-chunkifier
 ```
 
 ## Usage
