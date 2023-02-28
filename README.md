@@ -1,6 +1,6 @@
 # stream-chunkifier
 
-Impressed by `stream-chunker` another stream chunker which chunks incoming stream into evenly sized chunks using [stream simplified construction](https://nodejs.org/api/stream.html#simplified-construction), no dependency on through2. 
+Impressed by `stream-chunker` another stream chunker which chunks incoming stream into evenly sized chunks using [stream simplified construction](https://nodejs.org/api/stream.html#simplified-construction), no dependency on `through2`. 
 
 TODO: 
 Add support to chunk sterams by delimter
@@ -27,11 +27,11 @@ readStream
 ```
 
 ## API
+```js
+const {sizeChunkifier} = require('stream-chunkifier');
+const chunkify = sizeChunkifier(chunkSize,[options])
+```
 
-<code>
-const {sizeChunkifier} = require('stream-chunkifier'); <br />
-const chunkify = sizeChunkifier(chunkSize,[options])` 
-</code>
 
 Returns a new chunker. Chunker is a duplex (transform) stream, regardless of incoming chunk sizes, it emits evenly sized chunks. The last chunk could be smaller.
 
