@@ -28,9 +28,11 @@ readStream
 
 ## API
 
-#### `
-const {sizeChunkifier} = require('stream-chunkifier');
-const chunkify = sizeChunkifier(chunkSize,[options])`
+<code>
+const {sizeChunkifier} = require('stream-chunkifier'); <br />
+const chunkify = sizeChunkifier(chunkSize,[options])` 
+</code>
+
 Returns a new chunker. Chunker is a duplex (transform) stream, regardless of incoming chunk sizes, it emits evenly sized chunks. The last chunk could be smaller.
 
 - `chunkSize`: `integer` - Size in bytes of the desired chunks.
