@@ -3,7 +3,7 @@
 Impressed by `stream-chunker` another stream chunker which chunks incoming stream into evenly sized chunks using [stream simplified construction](https://nodejs.org/api/stream.html#simplified-construction), no dependency on `through2`. 
 
 TODO: 
-Add support to chunk sterams by delimter
+Add support to chunk streams by delimeter.
 
 
 ## Install
@@ -17,7 +17,7 @@ $ npm install stream-chunkifier
 ```js
 
 const {sizeChunkifier} = require('stream-chunkifier');
-const chunkify = sizeChunkifier(8)
+const chunkify = sizeChunkifier(8) // chunk steram by 8 bytes length
 const readSream=someHowGetReadStream() // Eg fs.createReadStream('filepath')
 
 readStream
